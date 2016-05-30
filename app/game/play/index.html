@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>端午粽动员</title>
+    <style>
+    html {
+        height: 100%;
+        min-width: 6.4rem;
+        font-size: 312.5%;
+        background-color: #fff;
+        -webkit-tap-highlight-color: transparent;
+        overflow-x: hidden;
+        background: #FFF;
+        background-size: .09rem auto;
+    }
+    
+    body {
+        color: #333;
+        font-size: .28em;
+        line-height: 1.5;
+        font-family: arial, Microsoft Yahei;
+        position: relative;
+    }
+    
+    body,
+    ul,
+    ol,
+    li,
+    form {
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: none
+    }
+    
+    ul,
+    ol {
+        list-style: none
+    }
+    
+    img {
+        border: 0;
+        vertical-align: top;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    div,
+    li,
+    p,
+    menu,
+    dl,
+    dt,
+    dd {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: normal;
+        -webkit-tap-highlight-color: transparent
+    }
+    
+    body,
+    html {
+        height: 100%;
+    }
+    
+    img {
+        border: none;
+        vertical-align: top;
+        width: 100%;
+    }
+    
+    section {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    section .ga {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .scene {
+        height: 6.72rem;
+        width: 6.4rem;
+        background: url(bg.jpg) no-repeat center center;
+        background-size: 6.4rem 6.72rem;
+        position: relative;
+    }
+    
+    .scene .eat {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .scene .num-time-music {
+        position: absolute;
+        top: 0.4rem;
+        width: 6.4rem;
+    }
+    
+    .scene .num {
+        display: inline-block;
+        font-size: .8rem;
+        line-height: .85rem;
+        color: #066786;
+        position: relative;
+        left: .3rem;
+    }
+    
+    .scene .time {
+        position: absolute;
+        width: 6.4rem;
+        top: .15rem;
+        font-size: .9rem;
+        line-height: .95rem;
+        color: #066786;
+        text-align: center;
+    }
+    
+    .scene .time .time-title {
+        font-size: .40rem;
+        line-height: .5rem;
+    }
+    
+    .scene .music {
+        position: absolute;
+        right: .3rem;
+        top: 0;
+        height: .88rem;
+        width: .88rem;
+    }
+    
+    .scene .music img {
+        animation: circle linear 3s infinite;
+    }
+    
+    @keyframes circle {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -webkit-transform: rotate(0deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(0deg);
+            /* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            -webkit-transform: rotate(360deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(360deg);
+            /* Opera */
+            -moz-transform: rotate(360deg);
+        }
+    }
+    
+    @-moz-keyframes circle
+    /* Firefox */
+    
+    {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -webkit-transform: rotate(0deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(0deg);
+            /* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            -webkit-transform: rotate(360deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(360deg);
+            /* Opera */
+            -moz-transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes circle
+    /* Safari 和 Chrome */
+    
+    {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -webkit-transform: rotate(0deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(0deg);
+            /* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            -webkit-transform: rotate(360deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(360deg);
+            /* Opera */
+            -moz-transform: rotate(360deg);
+        }
+    }
+    
+    @-o-keyframes circle
+    /* Opera */
+    
+    {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -webkit-transform: rotate(0deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(0deg);
+            /* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            -webkit-transform: rotate(360deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(360deg);
+            /* Opera */
+            -moz-transform: rotate(360deg);
+        }
+    }
+    
+    .time-out {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 50%;
+        margin-top: -5.68rem;
+    }
+    
+    .time-out img {
+        width: 6.40rem;
+        height: 11.36rem;
+    }
+    
+    .red-packet {
+        position: fixed;
+        width: 5.43rem;
+        height: 5.93rem;
+        top: 50%;
+        left: 50%;
+        margin-left: -2.715rem;
+        margin-top: -2.965rem;
+        display: none;
+        z-index: 8;
+    }
+    
+    .red-packet img {
+        width: 5.43rem;
+        height: 5.93rem;
+    }
+    
+    .red-packet .info-wrap {
+        position: absolute;
+        top: .65rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .red-packet .title {
+        font-size: .43rem;
+        color: #575656;
+    }
+    
+    .red-packet .amount {
+        color: #ff0013;
+        font-size: .37rem;
+    }
+    
+    .red-packet .amount span.quota {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: bold;
+    }
+    
+    .red-packet .info {
+        font-size: .28rem;
+        color: #9b9a9a;
+    }
+    
+    .red-packet .info a {
+        color: #47abef;
+        margin-left: .05rem;
+    }
+    
+    .red-packet .close {
+        position: absolute;
+        height: .8rem;
+        width: .8rem;
+        right: 0;
+        top: 0;
+    }
+    
+    .fail {
+        display: none;
+        width: 5.28rem;
+        height: 5.92rem;
+        margin-left: -2.64rem;
+        margin-top: -2.96rem;
+    }
+    
+    .fail img {
+        width: 5.28rem;
+        height: 5.92rem;
+    }
+    
+    .fail .copy {
+        font-size: .22rem;
+        color: #47abef;
+        margin: .01rem 0;
+    }
+    
+    .fail .results,
+    .fail .results-norm {
+        font-size: .26rem;
+        color: #e11424;
+        margin: 0 .03rem;
+    }
+    
+    .fail .play-again a {
+        font-size: .28rem;
+        color: #47abef;
+    }
+    
+    .fail .close {}
+    .mask{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 5;
+    }
+    </style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-72363786-1']);
+    _gaq.push(['_trackPageview']);
+    </script>
+</head>
+
+<body style="margin:0; padding:0;">
+    <div name="ac-title" style=" width:100%;font-family:Microsoft Yahei; background:#FFF;margin:0 auto; position:relative; max-width: 640px;" class="specalactdiv" actname="专题" secname="全国|端午粽动员">
+        <div class="scene">
+            <div class="num-time-music">
+                <div class="num"><span>0</span></div>
+                <div class="time">
+                    <div class="time-title">时间</div>
+                    <div class="countTime">10.00</div>
+                </div>
+                <div class="music"><img src="music.png" alt=""></div>
+            </div>
+            <div class="eatImg">
+                <img class="eat" src="eat-1.png" alt="端午粽动员">
+                <img class="eat" src="eat-2.png" alt="端午粽动员" style="display: none">
+                <img class="eat" src="eat-3.png" alt="端午粽动员" style="display: none">
+            </div>
+        </div>
+        <section>
+            <a class="ga" ga_t="点击这里" name="account" href="#" title="点击这里"></a>
+            <img src="play.jpg" alt="点击这里">
+        </section>
+        <div class="time-out"><img src="no-time.png" alt=""></div>
+        <div class="red-packet success">
+            <div class="info-wrap">
+                <div class="title">恭喜你~</div>
+                <div class="amount"><span class="quota">3</span><span>元</span></div>
+                <div class="info">详情请查询<a href="http://m.lashou.com/myBalance.php?act=youhuiquan">我的抵用券</a></div>
+            </div>
+            <img src="success.png" alt="">
+            <span class="close"></span>
+        </div>
+        <div class="red-packet fail notEnough">
+            <div class="info-wrap">
+                <div class="title">挑战失败</div>
+                <div class="copy">您的成绩为<span class="results">100</span>个粽子</div>
+                <div class="copy">必须吃到<span class="results-norm">80个粽子</span></div>
+                <div class="copy">才能领红包哦</div>
+                <div class="play-again"><a href="">再玩一次</a></div>
+            </div>
+            <img src="fail.png" alt="">
+            <span class="close"></span>
+        </div>
+        <div class="red-packet fail onlyOne">
+            <div class="info-wrap">
+                <div class="title">不好意思噢~</div>
+                <div class="copy">您已领取过大红包</div>
+                <div class="copy">每人仅限领取1个红包哦！</div>
+            </div>
+            <img src="fail.png" alt="">
+            <span class="close"></span>
+        </div>
+        <div class="red-packet fail couponOut">
+            <div class="info-wrap">
+                <div class="title">不好意思噢~</div>
+                <div class="copy">今日此等级奖励已发完</div>
+                <div class="copy">继续突破吧！</div>
+                <div class="copy">更大红包等着你呢！</div>
+            </div>
+            <img src="fail.png" alt="">
+            <span class="close"></span>
+        </div>
+        <div class="mask"></div>
+        <audio class="backgroundMusic" src="bg-music.mp3" autoplay="autoplay" loop="loop"></audio>
+        <audio class="eatVoice" src="" autoplay="autoplay"></audio>
+    </div>
+    <script>
+    (function(doc, win) { // 分辨率Resolution适配
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 640) {
+                    clientWidth = 640;
+                }
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            }; // Abort if browser does not support addEventListener
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+        // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale, 要注释上面的meta标签
+        (function() {
+            return;
+            var dpr = scale = 1;
+            var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+            var devicePixelRatio = win.devicePixelRatio;
+            if (isIPhone) { // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+                if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+                    dpr = 3;
+                } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+                    dpr = 2;
+                } else {
+                    dpr = 1;
+                }
+            } else { // 其他设备下，仍旧使用1倍的方案
+                dpr = 1;
+            }
+            scale = 1 / dpr;
+            var metaEl = "";
+            metaEl = doc.createElement('meta');
+            metaEl.setAttribute('name', 'viewport');
+            metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(metaEl);
+            } else {
+                var wrap = doc.createElement('div');
+                wrap.appendChild(metaEl);
+                doc.write(wrap.innerHTML);
+            }
+        })();
+    })(document, window); //********************添加事件**********************//
+    var actname = document.getElementsByName("ac-title")[0].getAttribute('actname');
+    var secname = document.getElementsByName("ac-title")[0].getAttribute('secname');
+    var oA = document.getElementsByName('account');
+    for (var i = 0; i < oA.length; i++) {
+        oA[i].href = oA[i].href.replace(/&fr=\d*/, '');
+        //去掉链接中的fr
+        oA[i].onclick = (function(e) {
+            _gaq.push(['_trackEvent', actname, secname + "|" + this.getAttribute('ga_t')]);
+        });
+    }
+    //*******************************************//
+    //谷歌检测
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-72363786-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https: ' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+<script src="../js/zepto.custom.js"></script>
+<script src="../js/play.js"></script>
+</body>
+
+</html>
